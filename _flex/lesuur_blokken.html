@@ -1,0 +1,20 @@
+---
+title: Lesuur blokken
+order: 40
+background: pattern
+container: container
+---
+{% for blok in site.lesuur_blokken %}
+<div class="col-md-6">
+  <div class="inner">
+    <img src="{{ "/images/" | relative_url }}{{blok.featured_image}}" alt="">
+
+    <div class="blok-title">
+      {{blok.title}}
+    </div>
+    <div class="blok-content">
+      {{content}}
+    </div>
+  </div>
+</div>
+{% endfor %}
