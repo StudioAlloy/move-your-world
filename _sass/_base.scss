@@ -20,9 +20,9 @@ body {
   background-position: center;
 
   background-repeat: no-repeat;
-  h1, h2, h3, h4, h5, h6, p, span, strong, label {
-    color: $brand-light;
-  }
+  // h1, h2, h3, h4, h5, h6, p, span, strong, label {
+  //   color: $brand-light;
+  // }
 }
 .container {
   padding-top: $base-margin*2;
@@ -71,5 +71,27 @@ img {
     padding: $base-margin;
     border-radius: $base-margin;
     color: $brand-light;
+  }
+}
+.alloy-lesuur_blokken {
+  margin-bottom: $base-margin*2;
+  img {
+    border-radius: $base-margin $base-margin 0 0;
+    margin-bottom: -10px;
+  }
+  .blok-title {
+    background-color: $brand-dark;
+    color: $brand-light;
+    text-transform: uppercase;
+    text-align: center;
+    padding: $base-margin;
+  }
+  .blok-content {
+    background-color: $brand-light;
+    color: $brand-dark !important;
+    // text-transform: uppercase;
+    // text-align: center;
+    padding: $base-margin*2;
+    border-radius: 0 0 $base-margin $base-margin;
   }
 }
