@@ -52,3 +52,24 @@ img {
 
   }
 }
+.alloy-radius {
+  border-radius: $base-margin;
+
+}
+.inner {
+  position: relative;
+}
+.alloy-absolute-quote {
+  position: absolute;
+  bottom: 40px;
+  left: -25px;
+
+  quote {
+    max-width: 60%;
+    display: block;
+    background-color: $brand-one;
+    padding: $base-margin;
+    border-radius: $base-margin;
+    color: $brand-light;
+  }
+}
