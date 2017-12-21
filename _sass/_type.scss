@@ -1,3 +1,27 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: $base-margin*2;
+}
+h1, h2, h3 {
+  color: $brand-one;
+  text-transform: uppercase;
+  line-height: 1.4em;
+}
+
+h4, h5, h6 {
+
+}
+a {
+  color: $brand-one;
+  text-decoration: none;
+}
+
+.alloy-pull-right {
+  text-align: right;
 }

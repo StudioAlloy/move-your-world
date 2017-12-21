@@ -1,16 +1,36 @@
 .site-header {
   .site-title {
     display: block;
-    max-width: 200px;
+    width: 100%;
+
     img {
       width: 100%;
+      max-width: 100%;
     }
   }
   a {
-    color: $brand-light;
+    // color: $brand-light;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 
+  }
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: $base-margin*2;
+  padding-right: $base-margin*2;
+
+  li {
+    display: inline-block;
+    margin-left: $base-margin;
+    &:last-of-type {
+      @extend .btn;
+      a {
+        color: $brand-light;
+      }
+    }
   }
 }

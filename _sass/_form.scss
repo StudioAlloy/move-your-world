@@ -1,5 +1,30 @@
 textarea,
 input {
   width: 100%;
-  margin-top: $base-margin;
+  margin-bottom: $base-margin;
+  padding: $base-margin;
+  font-size: 1em;
+}
+label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.btn,
+input[type="submit"] {
+  border: 0;
+  background-color: $brand-one;
+  color: $brand-light;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  width: auto;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+
+form {
+  input[type="submit"] {
+    float: right;
+  }
 }

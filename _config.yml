@@ -43,7 +43,7 @@ collections:
 description: > # thi s(>) means to ignore newlines until "email:"
   Move your world, iets voor jouw school?
 
-tageline: Move your world, iets voor jouw school?
+tagline: Move your world, iets voor jouw school?
 email: your-email@example.com
 twitter_username: jekyllrb
 github_username:  jekyll
