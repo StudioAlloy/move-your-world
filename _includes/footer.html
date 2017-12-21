@@ -11,7 +11,7 @@
 
       <form action="https://getsimpleform.com/messages?form_api_token=5ac8b5963b08a0d6b29713f6f799a5cf" method="post">
         <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='{{ "/thankyou.html" | relative_url }}' />
+        <input type='hidden' name='redirect_to' value='{{site.url}}{{site.baseurl}}/thankyou.html' />
           <!-- all your input fields here.... -->
           <label for="Naam">Naam</label>
           <input type='text' name='Naam' />
