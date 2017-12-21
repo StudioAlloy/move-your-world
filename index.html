@@ -1,22 +1,13 @@
 ---
 layout: page
 ---
-<div class="container--full">
-  <div class="container">
+{% assign flexSorted = (site.flex | sort: 'order')  %}
+{% for item in flexSorted %}
+<div class="container--full alloy-background--{{item.background}}">
+  <div class="{{item.container}}">
     <div class="row">
-      <div class="col-12">
-        <img src="{{ "/images/move_logo.svg" | relative_url }}" alt="">
-      </div>
+      {{item.content}}
     </div>
   </div>
 </div>
-<div class="container--full alloy-background--one">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>{{site.title}}</h2>
-        <p>{{site.description}}</p>
-      </div>
-    </div>
-  </div>
-</div>
+{% endfor %}

@@ -3,6 +3,21 @@ body {
 }
 .alloy-background--one {
   background-color: $brand-one;
+  h1, h2, h3, h4, h5, h6, p, span, strong, label {
+    color: $brand-light;
+  }
+}
+.alloy-background--dark {
+  background-color: $brand-dark;
+  h1, h2, h3, h4, h5, h6, p, span, strong, label {
+    color: $brand-light;
+  }
+}
+.alloy-background--pattern {
+  background-color: $brand-dark;
+  h1, h2, h3, h4, h5, h6, p, span, strong, label {
+    color: $brand-light;
+  }
 }
 .container {
   padding-top: $base-margin*2;
