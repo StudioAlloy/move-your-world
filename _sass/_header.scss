@@ -1,0 +1,16 @@
+.site-header {
+  .site-title {
+    display: block;
+    max-width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+  a {
+    color: $brand-light;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+
+  }
+}

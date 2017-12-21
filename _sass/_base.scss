@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+.alloy-background--one {
+  background-color: $brand-one;
+}
+.container {
+  padding-top: $base-margin*2;
+  > .row {
+    padding-bottom: $base-margin*2;
+  }
+}
