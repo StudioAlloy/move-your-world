@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Odudo Soft';
+  src: url('/assets/fonts/OdudoSoft-Bold.woff2') format('woff2'),
+  url('/assets/fonts/OdudoSoft-Bold.woff') format('woff'),
+  url('/assets/fonts/OdudoSoft-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i');
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -12,7 +22,13 @@ h1, h2, h3 {
   color: $brand-one;
   text-transform: uppercase;
   line-height: 1.4em;
+  font-family: 'Odudo Soft', sans-serif;
 }
+.btn {
+  font-family: 'Odudo Soft', sans-serif;
+  letter-spacing: 1px;
+}
+
 
 h4, h5, h6 {
  color: $brand-dark;
@@ -25,4 +41,7 @@ a {
 
 .alloy-pull-right {
   text-align: right;
+}
+.centered {
+  text-align: center;
 }
