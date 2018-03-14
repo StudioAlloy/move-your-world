@@ -99,6 +99,14 @@
       // machine3.shuffle();
 
     })
+
+    $("#disable-shuffle1").click(function(){
+      $('#machine1 .alloy-slot').toggle();
+      $('#machine1').toggleClass('disabled');
+    })
+
   });
+
+
 
 })(jQuery);
