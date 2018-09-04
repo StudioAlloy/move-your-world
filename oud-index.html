@@ -1,0 +1,13 @@
+---
+layout: page
+---
+{% assign flexSorted = site.flex | sort: 'order' %}
+{% for item in flexSorted %}
+<div class="container--full alloy-background--{{item.background}}" data-order="{{item.order}}" id="{{item.title | slugify }}">
+  <div class="{{item.container}}">
+    <div class="row">
+      {{item.content}}
+    </div>
+  </div>
+</div>
+{% endfor %}
