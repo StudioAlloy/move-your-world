@@ -1,43 +1,23 @@
-<footer class="site-footer alloy-background--dark" id="contact">
-<div class="container">
-  <div class="row">
-    <div class="col-md-5">
-      <h2>{{site.tagline}}</h2>
-      <p>Neem contact op met Sietske, Olga of Daphne van het Move your world projectteam via</p>
-      <p><a href=”mailto:info@moveyourworld.nl”>info@moveyourworld.nl</a></p>
-    </div>
-
-    <div class="col-md-6 offset-md-1">
-
-      <form action="https://getsimpleform.com/messages?form_api_token=13d93381d1a2f4f76005dfa4cd3a1625" method="post">
-        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='{{site.url}}{{site.baseurl}}/thankyou.html' />
-          <!-- all your input fields here.... -->
-          <label for="Naam">Naam</label>
-          <input type='text' name='Naam' />
-
-          <label for="Email">Email</label>
-          <input type='email' name='email' />
-
-          <label for="Bericht">Bericht</label>
-          <textarea name="Bericht" rows="8" cols="80"></textarea>
-
-          <input type='submit' value='Verstuur' />
-        </form>
+<!-- <footer class="site-footer alloy-background--dark" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Move your world is een initiatief van stichting Move. Ga voor meer informatie naar <a
+            href="//www.moveyourworld.nl">www.moveyourworld.nl</a></h2>
       </div>
     </div>
   </div>
 
-</footer>
+</footer> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-// (function(jQuery) {
-// Scroll (#) hash links to element instead of jump
-  jQuery(function() {
-    jQuery('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+  // (function(jQuery) {
+  // Scroll (#) hash links to element instead of jump
+  jQuery(function () {
+    jQuery('a[href*="#"]:not([href="#"])').click(function () {
+      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
         var target = jQuery(this.hash);
-        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           jQuery('html, body').animate({
             scrollTop: target.offset().top - 100
